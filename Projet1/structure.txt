@@ -1,0 +1,23 @@
+fichier carte:	.map
+Identifiant: map
+Dimensions: largeur x hauteur en nombre de zone
+Dimensions zone: largeur x hauteur en nombre de case
+Position de la première zone
+
+Zone:
+	n Case: 1 octet pour le type(symbole, S,>,<,A,V,F,+), 2 octets table de routage
+
+Gestion des feux:
+	Feux: position du feu 1, etat du feu 1 etc...
+
+
+Taille de la carte:
+//entête
+3o
+4o+4o
+4o+4o
+4o
+
+//données
+3o * l * h * lz * hz
++ 5o par feu
